@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Dist-Zilla-Plugin-PurePerlTests,
-version 0.01:
+version 0.02:
 
   Run all your tests twice, once with XS code and once with pure Perl
 
