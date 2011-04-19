@@ -1,5 +1,5 @@
 This file contains message digests of all files listed in MANIFEST,
-signed via the Module::Signature module, version 0.61.
+signed via the Module::Signature module, version 0.66.
 
 To verify the content in this distribution, first make sure you have
 Module::Signature installed, then type:
@@ -14,26 +14,25 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 f8b6e8ee5e24977136b2d08092196fd6c08c4522 Changes
-SHA1 8ba29029cdd935dae515bdbbea16eb1b84d0261b INSTALL
-SHA1 23c628b4a8a36738405ccdacaeb912d2e727b4c0 LICENSE
-SHA1 a6d5cffe0b7b63135a755b2e7a7df9ee1b958a1a MANIFEST
-SHA1 6b1e32a978e20c7ff9c643ab61559961e1ec8b90 META.json
-SHA1 532dd008fed7ea3766efce9ac886d8d245319d41 META.yml
-SHA1 910879efc445a992b2699ed5057fb96e62fd3b38 Makefile.PL
-SHA1 9812a21a6994c5ee394cdfb60d28339b1b2c54a8 README
-SHA1 9d87f0ebef0bd37d6177dd05f2fb4775746d5dea dist.ini
-SHA1 364a7a4fb4016eda17262d39e4040a77e35443c4 lib/Dist/Zilla/Plugin/PurePerlTests.pm
+SHA1 f2a8530f602119cd7274e547b004a8a34485c520 Changes
+SHA1 54fa7635dee732b3a3f35cce53ea31c54ef6c952 INSTALL
+SHA1 c715d20265d2931c7564fc64abfdc4f8ff33e297 LICENSE
+SHA1 a24644773b21bc357e98f3e366dd8857875b1433 MANIFEST
+SHA1 98ee7edca25483ded5e0d0713df7bc5c17ecc92e META.json
+SHA1 a76dad7693cb79044c3f4d5c9135babdde5a0b99 META.yml
+SHA1 0ce8ffd680c9cb539b87d5ce1397de7d117c4720 Makefile.PL
+SHA1 48476c4bd9534d31129dc8cf38063d45f542ab7d README
+SHA1 e879d6bc6ca1fcb265534afde0ad38e4d55d5a01 dist.ini
+SHA1 68a15d26b9b84026a528f622a7c40026a7160549 lib/Dist/Zilla/Plugin/PurePerlTests.pm
 SHA1 746f1d72cd2ddc1c62f39ac07520a536974a2905 t/01-compile.t
-SHA1 24b525e3c18f37f8022a01ec30de757cefb679ff t/release-eol.t
-SHA1 961a1e2c92d836c8cad2d34b784cbc75345dec63 t/release-kwalitee.t
+SHA1 2346c6403f21d316327ee1d2b7857a60c76ef278 t/release-cpan-changes.t
+SHA1 a032c41ef6887fab1b900669c2d304fab46680e2 t/release-eol.t
 SHA1 455d1dd1867212a665ad5ea4126b572411de300c t/release-no-tabs.t
-SHA1 9433c240fe590bc404ab68ff63984df763e347ed t/release-pod-coverage.t
-SHA1 9775e90d40f094f3e5a23c695d6e6e436a2232c3 t/release-pod-syntax.t
+SHA1 b30cbdfaf935017c4568c0c91b242438cb87786e t/release-pod-syntax.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iEYEARECAAYFAkwpVB8ACgkQIgMCsV8qvRKIRACfZS2xlocPhzcme743+pKrlzVt
-3W0AnRj3OI6/KCM1yLFVpRc2qBIJYiHs
-=c+5l
+iEYEARECAAYFAk2t3ygACgkQIgMCsV8qvRLsHACfQ0/59dqFv0VXOmo4dGsWu4Lf
+OjkAn3Add39RTy8fwlM4o2z0oTqd89Yl
+=LWWH
 -----END PGP SIGNATURE-----

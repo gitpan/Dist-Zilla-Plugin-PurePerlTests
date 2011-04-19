@@ -4,7 +4,7 @@
       "Dave Rolsky <autarch@urth.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.101790, CPAN::Meta::Converter version 2.101670",
+   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110580",
    "license" : [
       "artistic_2"
    ],
@@ -43,6 +43,6 @@
          "web" : "http://hg.urth.org/hg/Dist-Zilla-Plugin-PurePerlTests"
       }
    },
-   "version" : "0.02"
+   "version" : "0.03"
 }
 

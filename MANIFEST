@@ -10,8 +10,7 @@ SIGNATURE
 dist.ini
 lib/Dist/Zilla/Plugin/PurePerlTests.pm
 t/01-compile.t
+t/release-cpan-changes.t
 t/release-eol.t
-t/release-kwalitee.t
 t/release-no-tabs.t
-t/release-pod-coverage.t
 t/release-pod-syntax.t

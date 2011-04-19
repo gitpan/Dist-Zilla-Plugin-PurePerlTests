@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::PurePerlTests;
 BEGIN {
-  $Dist::Zilla::Plugin::PurePerlTests::VERSION = '0.02';
+  $Dist::Zilla::Plugin::PurePerlTests::VERSION = '0.03';
 }
 
 use strict;
@@ -41,7 +41,15 @@ sub _copy_file {
 
     my $env_var = $self->env_var();
 
+    my $perl_line = q{};
+
+    if ( $content =~ s/^(\#![^\n]+)\n// ) {
+        $perl_line = $1;
+    }
+
     $content = <<"EOF";
+$perl_line
+
 use Test::More;
 
 BEGIN {
@@ -81,7 +89,7 @@ Dist::Zilla::Plugin::PurePerlTests - Run all your tests twice, once with XS code
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 SYNOPSIS
 
@@ -141,15 +149,15 @@ button on this page: L<http://www.urth.org/~autarch/fs-donation.html>
 
 =head1 AUTHOR
 
-  Dave Rolsky <autarch@urth.org>
+Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2010 by Dave Rolsky.
+This software is Copyright (c) 2011 by Dave Rolsky.
 
 This is free software, licensed under:
 
-  The Artistic License 2.0
+  The Artistic License 2.0 (GPL Compatible)
 
 =cut
 

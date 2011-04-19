@@ -1,14 +1,14 @@
 
 
 This archive contains the distribution Dist-Zilla-Plugin-PurePerlTests,
-version 0.02:
+version 0.03:
 
   Run all your tests twice, once with XS code and once with pure Perl
 
-This software is Copyright (c) 2010 by Dave Rolsky.
+This software is Copyright (c) 2011 by Dave Rolsky.
 
 This is free software, licensed under:
 
-  The Artistic License 2.0
+  The Artistic License 2.0 (GPL Compatible)
 
 
