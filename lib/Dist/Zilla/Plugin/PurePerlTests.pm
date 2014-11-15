@@ -1,8 +1,7 @@
 package Dist::Zilla::Plugin::PurePerlTests;
-BEGIN {
-  $Dist::Zilla::Plugin::PurePerlTests::VERSION = '0.03';
-}
+# git description: 774b4f7
 
+$Dist::Zilla::Plugin::PurePerlTests::VERSION = '0.04';
 use strict;
 use warnings;
 
@@ -24,6 +23,8 @@ sub gather_files {
 
     for my $file ( grep { $_->name() =~ m<\At/.+\.t\z> }
         $self->zilla()->files()->flatten() ) {
+
+        next if $file->isa('Dist::Zilla::File::InMemory');
 
         $self->_copy_file($file);
     }
@@ -54,7 +55,7 @@ use Test::More;
 
 BEGIN {
     unless ( \$ENV{RELEASE_TESTING} ) {
-        plan skip_all => 'these tests are for testing by the release';
+        plan skip_all => 'these tests are for release testing';
     }
 
     \$ENV{$env_var} = 1;
@@ -79,7 +80,7 @@ __PACKAGE__->meta()->make_immutable();
 
 # ABSTRACT: Run all your tests twice, once with XS code and once with pure Perl
 
-
+__END__
 
 =pod
 
@@ -89,7 +90,7 @@ Dist::Zilla::Plugin::PurePerlTests - Run all your tests twice, once with XS code
 
 =head1 VERSION
 
-version 0.03
+version 0.04
 
 =head1 SYNOPSIS
 
@@ -153,14 +154,10 @@ Dave Rolsky <autarch@urth.org>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is Copyright (c) 2011 by Dave Rolsky.
+This software is Copyright (c) 2010 - 2014 by Dave Rolsky.
 
 This is free software, licensed under:
 
   The Artistic License 2.0 (GPL Compatible)
 
 =cut
-
-
-__END__
-

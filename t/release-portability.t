@@ -1,3 +1,4 @@
+#!perl
 
 BEGIN {
   unless ($ENV{RELEASE_TESTING}) {
@@ -6,11 +7,13 @@ BEGIN {
   }
 }
 
+
 use strict;
 use warnings;
+
 use Test::More;
 
-eval 'use Test::NoTabs';
-plan skip_all => 'Test::NoTabs required' if $@;
-
-all_perl_files_ok();
+eval 'use Test::Portability::Files';
+plan skip_all => 'Test::Portability::Files required for testing portability'
+    if $@;
+run_tests();
